@@ -1,0 +1,57 @@
+do fourBitAdder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:00 on Feb 24,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns fourBitAdder.v 
+# -- Compiling module fourBitAdder
+# -- Compiling module fullAdder
+# 
+# Top level modules:
+# 	fourBitAdder
+# End time: 22:56:01 on Feb 24,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim fourBitAdder 
+# Start time: 22:56:01 on Feb 24,2019
+# Loading work.fourBitAdder
+# Loading work.fullAdder
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do fourBitAdder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:57:32 on Feb 24,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns fourBitAdder.v 
+# -- Compiling module fourBitAdder
+# -- Compiling module fullAdder
+# 
+# Top level modules:
+# 	fourBitAdder
+# End time: 22:57:32 on Feb 24,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:57:32 on Feb 24,2019, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 1
+# vsim fourBitAdder 
+# Start time: 22:57:32 on Feb 24,2019
+# Loading work.fourBitAdder
+# Loading work.fullAdder
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do fourBitAdder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:16 on Feb 24,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns fourBitAdder.v 
+# -- Compiling module fourBitAdder
+# -- Compiling module fullAdder
+# 
+# Top level modules:
+# 	fourBitAdder
+# End time: 22:58:16 on Feb 24,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:58:16 on Feb 24,2019, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 1
+# vsim fourBitAdder 
+# Start time: 22:58:16 on Feb 24,2019
+# Loading work.fourBitAdder
+# Loading work.fullAdder
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# End time: 23:00:31 on Feb 24,2019, Elapsed time: 0:02:15
+# Errors: 0, Warnings: 1

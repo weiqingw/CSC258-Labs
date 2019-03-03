@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Feb 25 00:21:21 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : edgeTriggeredDFlipFlop
+Top-level Entity Name : edgeTriggeredDFlipFlop
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 8
+Total pins : 40
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 1
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

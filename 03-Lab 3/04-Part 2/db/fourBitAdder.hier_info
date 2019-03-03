@@ -1,0 +1,61 @@
+|fourBitAdder
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+LEDR[0] <= fullAdder:FA1.s
+LEDR[1] <= fullAdder:FA2.s
+LEDR[2] <= fullAdder:FA3.s
+LEDR[3] <= fullAdder:FA4.s
+LEDR[4] <= fullAdder:FA4.cout
+
+
+|fourBitAdder|fullAdder:FA1
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fourBitAdder|fullAdder:FA2
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fourBitAdder|fullAdder:FA3
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fourBitAdder|fullAdder:FA4
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,23 @@
+do shiftRegister.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:59 on Feb 04,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns shiftRegister.v 
+# -- Compiling module shiftRegister
+# -- Compiling module ShifterBit
+# -- Compiling module FlipFlop
+# -- Compiling module TwoToOneMux
+# 
+# Top level modules:
+# 	shiftRegister
+# End time: 20:28:59 on Feb 04,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim shiftRegister 
+# Start time: 20:28:59 on Feb 04,2019
+# Loading work.shiftRegister
+# Loading work.TwoToOneMux
+# Loading work.ShifterBit
+# Loading work.FlipFlop
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# End time: 20:34:07 on Feb 04,2019, Elapsed time: 0:05:08
+# Errors: 0, Warnings: 1

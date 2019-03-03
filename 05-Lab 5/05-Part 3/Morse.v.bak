@@ -1,0 +1,88 @@
+module Morse(SW, KEY, LEDR, CLOCK_50);
+	input [3:0] SW;  //SW[3] Enable
+	input [1:0] KEY; //KEY[0] reset; KEY[1] load
+	input CLOCK_50;
+	output [0:0] LEDR;
+	wire [13:0] c;
+	wire En;
+	wire shift_out;
+
+	LUT L0(
+		.in(SW[2:0]), 
+		.out(c[13:0])
+	);
+	RateDivider r0(
+		.Clk(CLOCK_50), 
+		.reset_n(KEY[0]), 
+		.Enable(SW[3]), 
+		.d(En)
+	);
+	ShiftRegister s0(
+		.in(c[13:0]), 
+		.Clk(CLOCK_50), 
+		.reset(KEY[0]), 
+		.En(En), 
+		.load(KEY[1]), 
+		.out(shift_out)
+	);
+	assign LEDR[0] = shift_out;
+endmodule
+
+module LUT(in, out);
+	input [2:0] in;
+	output reg [13:0] out;
+
+	always @(*)
+	begin
+		case (in[2:0])
+			3'b000: out = 14'b10101000000000;
+			3'b001: out = 14'b11100000000000;
+			3'b010: out = 14'b10101110000000;
+			3'b011: out = 14'b10101011100000;
+			3'b100: out = 14'b10111011100000;
+			3'b101: out = 14'b11101010111000;
+			3'b110: out = 14'b11101011101110;
+			3'b111: out = 14'b11101110101000;
+		endcase
+	end
+endmodule
+
+module ShiftRegister(in, Clk, reset, En, load, out);
+	input [13:0] in;
+	input Clk;
+	input reset; //KEY[0]
+	input En;
+	input load; //KEY[1]
+	output out;
+	reg [13:0] register;
+
+	always @(posedge Clk, negedge load, negedge reset)
+	begin
+		if (reset == 1'b0) //KEY[0]
+			register <= 0;
+		else if (En == 1'b1) //SW[3]
+			register <= {register[12:0], 1'b0}; 
+		else if (load == 1'b0) //KEY[1]
+			register <= in;
+	end
+	assign out = register[13];
+endmodule
+
+module RateDivider(Clk, reset_n, Enable, d);
+	input [28:0] d;
+	input reset_n;
+	input Clk;
+	output Enable;
+	reg [27:0]count;
+
+	always @(posedge Clk, negedge reset_n)
+	begin
+		if (reset_n == 1'b0)
+			count <= d;
+		else if (count == 0)
+			count <= d;
+		else
+			count <= count - 1;
+	end
+	assign Enable = (count == 0) ? 1 : 0;
+endmodule

@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/05-Lab 5/05-Part 3
+vMorse
+Z1 !s110 1551486273
+!i10b 1
+!s100 @mQ@Ce`dFWWU1[I^C9=Zf0
+IMz`AFo>z[825`;Mn>W4A:2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1551479675
+Z4 8Morse.v
+Z5 FMorse.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1551486273.000000
+Z8 !s107 Morse.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|Morse.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+n@morse
+vRateDivider
+R1
+!i10b 1
+!s100 Sz4WZV33P93cC;gSe2j5R1
+I<RizoShZ@BMRQXY13fz0A1
+R2
+R0
+R3
+R4
+R5
+L0 41
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@rate@divider
+vShiftRegister
+R1
+!i10b 1
+!s100 CY8Y`z2O^MEloIBY5QSVl1
+I=V:CkbQI8Nj<5]_H]AN7M2
+R2
+R0
+R3
+R4
+R5
+L0 62
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@shift@register

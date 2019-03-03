@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at Morse.v(66): always construct contains both blocking and non-blocking assignments File: /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/05-Lab 5/05-Part 3/Morse.v Line: 66
+Info (10281): Verilog HDL Declaration information at Morse.v(62): object "pattern" differs only in case from object "Pattern" in the same scope File: /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/05-Lab 5/05-Part 3/Morse.v Line: 62

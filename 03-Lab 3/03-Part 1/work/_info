@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/03-Lab 3/03-Part 1
+vsevenToOneMux
+!s110 1548634427
+!i10b 1
+!s100 k>V^dgTAcMVzMDhR=03nd0
+IYEd5527zd;c8AGP90A4YW3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1548632876
+8sevenToOneMux.v
+FsevenToOneMux.v
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1548634427.000000
+!s107 sevenToOneMux.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|sevenToOneMux.v|
+!i113 1
+o-timescale 1ns/1ns
+tCvgOpt 0
+nseven@to@one@mux

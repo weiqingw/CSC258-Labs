@@ -1,0 +1,63 @@
+module eightBitCounter(KEY, SW, HEX0, HEX1);
+	input [0:0] KEY;
+	input [1:0] SW;
+	output [6:0] HEX0;
+	output [6:0] HEX1;
+	wire [7:0] Q;
+
+	tTypeFlipFlop TFF0(.Clk(KEY[0]), .T(SW[1]), .Q(Q[0]), .Clear_n(SW[0]));
+	tTypeFlipFlop TFF1(.Clk(KEY[0]), .T((SW[1] & Q[0])), .Q(Q[1]), .Clear_n(SW[0]));
+	tTypeFlipFlop TFF2(.Clk(KEY[0]), .T((Q[2] & Q[1])), .Q(Q[2]), .Clear_n(SW[0]));
+	tTypeFlipFlop TFF3(.Clk(KEY[0]), .T((Q[3] & Q[2])), .Q(Q[3]), .Clear_n(SW[0]));
+	tTypeFlipFlop TFF4(.Clk(KEY[0]), .T((Q[4] & Q[3])), .Q(Q[4]), .Clear_n(SW[0]));
+	tTypeFlipFlop TFF5(.Clk(KEY[0]), .T((Q[5] & Q[4])), .Q(Q[5]), .Clear_n(SW[0]));
+	tTypeFlipFlop TFF6(.Clk(KEY[0]), .T((Q[6] & Q[5])), .Q(Q[6]), .Clear_n(SW[0]));
+	tTypeFlipFlop TFF7(.Clk(KEY[0]), .T((Q[7] & Q[6])), .Q(Q[7]), .Clear_n(SW[0]));
+
+	hexDecoder hex0(.SW(Q[3:0]), .HEX(HEX0[6:0]));
+	hexDecoder hex1(.SW(Q[7:4]), .HEX(HEX1[6:0]));
+endmodule
+
+module tTypeFlipFlop(Clk, T, Clear_n, Q);
+	input Clk;
+	input T;
+	input Clear_n;
+	output reg Q;
+
+	always @(posedge Clk, negedge Clear_n)
+ 	begin
+		if (Clear_n == 1'b0)
+			Q <= 1'b0;
+		else if  (T == 1'b1)
+			Q <= !Q;
+	end
+endmodule
+
+module hexDecoder (SW, HEX);
+	input [3:0] SW;
+	reg [6:0] result;
+	output [6:0] HEX;
+	always @(*)
+	begin
+		case (SW[3:0])
+			4'b0000: result[6:0] = 7'b1000000;
+			4'b0001: result[6:0] = 7'b1111001;
+			4'b0010: result[6:0] = 7'b0100100;
+			4'b0011: result[6:0] = 7'b0110000;
+			4'b0100: result[6:0] = 7'b0011001;
+			4'b0101: result[6:0] = 7'b0010010;
+			4'b0110: result[6:0] = 7'b0000010;
+			4'b0111: result[6:0] = 7'b1111000;
+			4'b1000: result[6:0] = 7'b0000000;
+			4'b1001: result[6:0] = 7'b0010000;
+			4'b1010: result[6:0] = 7'b0001000;
+			4'b1011: result[6:0] = 7'b0000011;
+			4'b1100: result[6:0] = 7'b1000110;
+			4'b1101: result[6:0] = 7'b0100001;
+			4'b1110: result[6:0] = 7'b0000110;
+			4'b1111: result[6:0] = 7'b0001110;
+			default: result[6:0] = 7'b1000000;
+		endcase
+	end
+	assign HEX[6:0] = result[6:0];
+endmodule

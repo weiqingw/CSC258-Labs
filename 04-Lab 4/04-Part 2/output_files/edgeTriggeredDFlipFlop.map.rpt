@@ -1,0 +1,351 @@
+Analysis & Synthesis report for edgeTriggeredDFlipFlop
+Mon Feb 25 00:21:21 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "fourBitAdder:FA2"
+ 11. Port Connectivity Checks: "fourBitAdder:FA1"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Feb 25 00:21:21 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; edgeTriggeredDFlipFlop                      ;
+; Top-level Entity Name           ; edgeTriggeredDFlipFlop                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 8                                           ;
+; Total pins                      ; 40                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 1                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                     ;
++---------------------------------------------------------------------------------+------------------------+------------------------+
+; Option                                                                          ; Setting                ; Default Value          ;
++---------------------------------------------------------------------------------+------------------------+------------------------+
+; Device                                                                          ; 5CSEMA5F31C6           ;                        ;
+; Top-level entity name                                                           ; edgeTriggeredDFlipFlop ; edgeTriggeredDFlipFlop ;
+; Family name                                                                     ; Cyclone V              ; Cyclone V              ;
+; Use smart compilation                                                           ; Off                    ; Off                    ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                     ; On                     ;
+; Enable compact report table                                                     ; Off                    ; Off                    ;
+; Restructure Multiplexers                                                        ; Auto                   ; Auto                   ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                    ; Off                    ;
+; Create Debugging Nodes for IP Cores                                             ; Off                    ; Off                    ;
+; Preserve fewer node names                                                       ; On                     ; On                     ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable                 ; Enable                 ;
+; Verilog Version                                                                 ; Verilog_2001           ; Verilog_2001           ;
+; VHDL Version                                                                    ; VHDL_1993              ; VHDL_1993              ;
+; State Machine Processing                                                        ; Auto                   ; Auto                   ;
+; Safe State Machine                                                              ; Off                    ; Off                    ;
+; Extract Verilog State Machines                                                  ; On                     ; On                     ;
+; Extract VHDL State Machines                                                     ; On                     ; On                     ;
+; Ignore Verilog initial constructs                                               ; Off                    ; Off                    ;
+; Iteration limit for constant Verilog loops                                      ; 5000                   ; 5000                   ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                    ; 250                    ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                     ; On                     ;
+; Infer RAMs from Raw Logic                                                       ; On                     ; On                     ;
+; Parallel Synthesis                                                              ; On                     ; On                     ;
+; DSP Block Balancing                                                             ; Auto                   ; Auto                   ;
+; NOT Gate Push-Back                                                              ; On                     ; On                     ;
+; Power-Up Don't Care                                                             ; On                     ; On                     ;
+; Remove Redundant Logic Cells                                                    ; Off                    ; Off                    ;
+; Remove Duplicate Registers                                                      ; On                     ; On                     ;
+; Ignore CARRY Buffers                                                            ; Off                    ; Off                    ;
+; Ignore CASCADE Buffers                                                          ; Off                    ; Off                    ;
+; Ignore GLOBAL Buffers                                                           ; Off                    ; Off                    ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                    ; Off                    ;
+; Ignore LCELL Buffers                                                            ; Off                    ; Off                    ;
+; Ignore SOFT Buffers                                                             ; On                     ; On                     ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                    ; Off                    ;
+; Optimization Technique                                                          ; Balanced               ; Balanced               ;
+; Carry Chain Length                                                              ; 70                     ; 70                     ;
+; Auto Carry Chains                                                               ; On                     ; On                     ;
+; Auto Open-Drain Pins                                                            ; On                     ; On                     ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                    ; Off                    ;
+; Auto ROM Replacement                                                            ; On                     ; On                     ;
+; Auto RAM Replacement                                                            ; On                     ; On                     ;
+; Auto DSP Block Replacement                                                      ; On                     ; On                     ;
+; Auto Shift Register Replacement                                                 ; Auto                   ; Auto                   ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                   ; Auto                   ;
+; Auto Clock Enable Replacement                                                   ; On                     ; On                     ;
+; Strict RAM Replacement                                                          ; Off                    ; Off                    ;
+; Allow Synchronous Control Signals                                               ; On                     ; On                     ;
+; Force Use of Synchronous Clear Signals                                          ; Off                    ; Off                    ;
+; Auto Resource Sharing                                                           ; Off                    ; Off                    ;
+; Allow Any RAM Size For Recognition                                              ; Off                    ; Off                    ;
+; Allow Any ROM Size For Recognition                                              ; Off                    ; Off                    ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                    ; Off                    ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                     ; On                     ;
+; Ignore translate_off and synthesis_off directives                               ; Off                    ; Off                    ;
+; Timing-Driven Synthesis                                                         ; On                     ; On                     ;
+; Report Parameter Settings                                                       ; On                     ; On                     ;
+; Report Source Assignments                                                       ; On                     ; On                     ;
+; Report Connectivity Checks                                                      ; On                     ; On                     ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                    ; Off                    ;
+; Synchronization Register Chain Length                                           ; 3                      ; 3                      ;
+; Power Optimization During Synthesis                                             ; Normal compilation     ; Normal compilation     ;
+; HDL message level                                                               ; Level2                 ; Level2                 ;
+; Suppress Register Optimization Related Messages                                 ; Off                    ; Off                    ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                   ; 5000                   ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                   ; 5000                   ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                    ; 100                    ;
+; Clock MUX Protection                                                            ; On                     ; On                     ;
+; Auto Gated Clock Conversion                                                     ; Off                    ; Off                    ;
+; Block Design Naming                                                             ; Auto                   ; Auto                   ;
+; SDC constraint protection                                                       ; Off                    ; Off                    ;
+; Synthesis Effort                                                                ; Auto                   ; Auto                   ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                     ; On                     ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                    ; Off                    ;
+; Analysis & Synthesis Message Level                                              ; Medium                 ; Medium                 ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                   ; Auto                   ;
+; Resource Aware Inference For Block RAM                                          ; On                     ; On                     ;
+; Automatic Parallel Synthesis                                                    ; On                     ; On                     ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                    ; Off                    ;
++---------------------------------------------------------------------------------+------------------------+------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                               ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                                 ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; edgeTriggeredDFlipFlop.v         ; yes             ; User Verilog HDL File  ; /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/04-Part 2/edgeTriggeredDFlipFlop.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 43          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 68          ;
+;     -- 7 input functions                    ; 1           ;
+;     -- 6 input functions                    ; 17          ;
+;     -- 5 input functions                    ; 17          ;
+;     -- 4 input functions                    ; 24          ;
+;     -- <=3 input functions                  ; 9           ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 8           ;
+;                                             ;             ;
+; I/O pins                                    ; 40          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 1           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[1]~input ;
+; Maximum fan-out                             ; 29          ;
+; Total fan-out                               ; 415         ;
+; Average fan-out                             ; 2.64        ;
++---------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Entity Name            ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+------------------------+--------------+
+; |edgeTriggeredDFlipFlop    ; 68 (45)             ; 8 (8)                     ; 0                 ; 1          ; 40   ; 0            ; |edgeTriggeredDFlipFlop                                ; edgeTriggeredDFlipFlop ; work         ;
+;    |fourBitAdder:FA1|      ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |edgeTriggeredDFlipFlop|fourBitAdder:FA1               ; fourBitAdder           ; work         ;
+;       |fullAdder:FA3|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |edgeTriggeredDFlipFlop|fourBitAdder:FA1|fullAdder:FA3 ; fullAdder              ; work         ;
+;    |fourBitAdder:FA2|      ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |edgeTriggeredDFlipFlop|fourBitAdder:FA2               ; fourBitAdder           ; work         ;
+;       |fullAdder:FA4|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |edgeTriggeredDFlipFlop|fourBitAdder:FA2|fullAdder:FA4 ; fullAdder              ; work         ;
+;    |hexDecoder:hex0|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |edgeTriggeredDFlipFlop|hexDecoder:hex0                ; hexDecoder             ; work         ;
+;    |hexDecoder:hex4|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |edgeTriggeredDFlipFlop|hexDecoder:hex4                ; hexDecoder             ; work         ;
+;    |hexDecoder:hex5|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |edgeTriggeredDFlipFlop|hexDecoder:hex5                ; hexDecoder             ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Independent 9x9                 ; 1           ;
+; Total number of DSP blocks      ; 1           ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 1           ;
++---------------------------------+-------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 8     ;
+; Number of registers using Synchronous Clear  ; 8     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "fourBitAdder:FA2" ;
++----------+-------+----------+----------------+
+; Port     ; Type  ; Severity ; Details        ;
++----------+-------+----------+----------------+
+; SW[3..1] ; Input ; Info     ; Stuck at GND   ;
+; SW[8]    ; Input ; Info     ; Stuck at GND   ;
+; SW[0]    ; Input ; Info     ; Stuck at VCC   ;
++----------+-------+----------+----------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "fourBitAdder:FA1" ;
++-------+-------+----------+-------------------+
+; Port  ; Type  ; Severity ; Details           ;
++-------+-------+----------+-------------------+
+; SW[8] ; Input ; Info     ; Stuck at GND      ;
++-------+-------+----------+-------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 8                           ;
+;     SCLR              ; 8                           ;
+; arriav_lcell_comb     ; 71                          ;
+;     arith             ; 4                           ;
+;         2 data inputs ; 4                           ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 66                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 24                          ;
+;         5 data inputs ; 17                          ;
+;         6 data inputs ; 17                          ;
+; arriav_mac            ; 1                           ;
+; boundary_port         ; 40                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.31                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Mon Feb 25 00:21:04 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off edgeTriggeredDFlipFlop -c edgeTriggeredDFlipFlop
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 4 design units, including 4 entities, in source file edgeTriggeredDFlipFlop.v
+    Info (12023): Found entity 1: edgeTriggeredDFlipFlop File: /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/04-Part 2/edgeTriggeredDFlipFlop.v Line: 1
+    Info (12023): Found entity 2: hexDecoder File: /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/04-Part 2/edgeTriggeredDFlipFlop.v Line: 57
+    Info (12023): Found entity 3: fourBitAdder File: /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/04-Part 2/edgeTriggeredDFlipFlop.v Line: 86
+    Info (12023): Found entity 4: fullAdder File: /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/04-Part 2/edgeTriggeredDFlipFlop.v Line: 124
+Info (12127): Elaborating entity "edgeTriggeredDFlipFlop" for the top level hierarchy
+Info (12128): Elaborating entity "fourBitAdder" for hierarchy "fourBitAdder:FA1" File: /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/04-Part 2/edgeTriggeredDFlipFlop.v Line: 12
+Info (12128): Elaborating entity "fullAdder" for hierarchy "fourBitAdder:FA1|fullAdder:FA1" File: /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/04-Part 2/edgeTriggeredDFlipFlop.v Line: 97
+Info (12128): Elaborating entity "hexDecoder" for hierarchy "hexDecoder:hex0" File: /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/04-Part 2/edgeTriggeredDFlipFlop.v Line: 44
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/04-Part 2/output_files/edgeTriggeredDFlipFlop.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[8]" File: /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/04-Part 2/edgeTriggeredDFlipFlop.v Line: 2
+Info (21057): Implemented 117 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 76 logic cells
+    Info (21062): Implemented 1 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 1028 megabytes
+    Info: Processing ended: Mon Feb 25 00:21:21 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:41
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/04-Part 2/output_files/edgeTriggeredDFlipFlop.map.smsg.
+
+

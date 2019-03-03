@@ -1,0 +1,21 @@
+do Morse.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:24:33 on Mar 01,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns Morse.v 
+# -- Compiling module Morse
+# -- Compiling module RateDivider
+# -- Compiling module ShiftRegister
+# 
+# Top level modules:
+# 	Morse
+# End time: 19:24:33 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim Morse 
+# Start time: 19:24:33 on Mar 01,2019
+# Loading work.Morse
+# Loading work.RateDivider
+# Loading work.ShiftRegister
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# End time: 21:48:12 on Mar 01,2019, Elapsed time: 2:23:39
+# Errors: 0, Warnings: 1

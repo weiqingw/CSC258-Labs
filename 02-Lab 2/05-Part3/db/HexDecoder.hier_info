@@ -1,0 +1,124 @@
+|HexDecoder
+HEX0[0] <= hex0:u0.m
+HEX0[1] <= hex1:u1.m
+HEX0[2] <= hex2:u2.m
+HEX0[3] <= hex3:u3.m
+HEX0[4] <= hex4:u4.m
+HEX0[5] <= hex5:u5.m
+HEX0[6] <= hex6:u6.m
+SW[0] => SW[0].IN7
+SW[1] => SW[1].IN7
+SW[2] => SW[2].IN7
+SW[3] => SW[3].IN7
+
+
+|HexDecoder|hex0:u0
+x => m.IN0
+x => m.IN0
+x => m.IN0
+x => m.IN0
+y => m.IN1
+y => m.IN1
+y => m.IN1
+y => m.IN1
+z => m.IN1
+z => m.IN1
+z => m.IN1
+z => m.IN1
+w => m.IN1
+w => m.IN1
+w => m.IN1
+w => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HexDecoder|hex1:u1
+x => m.IN0
+x => m.IN0
+x => m.IN0
+y => m.IN1
+y => m.IN0
+y => m.IN1
+z => m.IN1
+z => m.IN1
+z => m.IN1
+w => m.IN1
+w => m.IN1
+w => m.IN1
+w => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HexDecoder|hex2:u2
+x => m.IN0
+x => m.IN0
+y => m.IN1
+y => m.IN1
+z => m.IN1
+z => m.IN1
+w => m.IN1
+w => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HexDecoder|hex3:u3
+x => m.IN0
+x => m.IN0
+x => m.IN0
+y => m.IN0
+y => m.IN1
+y => m.IN1
+y => m.IN1
+z => m.IN1
+z => m.IN1
+z => m.IN1
+z => m.IN1
+w => m.IN1
+w => m.IN1
+w => m.IN1
+w => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HexDecoder|hex4:u4
+x => m.IN0
+x => m.IN0
+y => m.IN1
+y => m.IN0
+z => m.IN1
+z => m.IN1
+w => m.IN1
+w => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HexDecoder|hex5:u5
+x => m.IN0
+x => m.IN0
+x => m.IN0
+y => m.IN1
+y => m.IN1
+z => m.IN1
+z => m.IN1
+z => m.IN1
+w => m.IN1
+w => m.IN1
+w => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HexDecoder|hex6:u6
+x => m.IN0
+x => m.IN0
+x => m.IN0
+y => m.IN1
+y => m.IN1
+y => m.IN1
+z => m.IN1
+z => m.IN1
+z => m.IN1
+w => m.IN1
+w => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+

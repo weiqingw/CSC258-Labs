@@ -1,0 +1,249 @@
+|edgeTriggeredDFlipFlop
+SW[0] => SW[0].IN3
+SW[1] => SW[1].IN3
+SW[2] => SW[2].IN3
+SW[3] => SW[3].IN3
+SW[4] => ALUout.IN0
+SW[4] => ALUout.IN0
+SW[5] => ALUout.IN0
+SW[5] => ALUout.IN0
+SW[5] => Mux0.IN10
+SW[5] => Mux1.IN10
+SW[5] => Mux2.IN10
+SW[5] => Mux3.IN8
+SW[5] => Mux4.IN8
+SW[5] => Mux5.IN8
+SW[5] => Mux6.IN8
+SW[5] => Mux7.IN8
+SW[6] => ALUout.IN0
+SW[6] => ALUout.IN0
+SW[6] => Mux0.IN9
+SW[6] => Mux1.IN9
+SW[6] => Mux2.IN9
+SW[6] => Mux3.IN7
+SW[6] => Mux4.IN7
+SW[6] => Mux5.IN7
+SW[6] => Mux6.IN7
+SW[6] => Mux7.IN7
+SW[7] => ALUout.IN0
+SW[7] => ALUout.IN0
+SW[7] => Mux0.IN8
+SW[7] => Mux1.IN8
+SW[7] => Mux2.IN8
+SW[7] => Mux3.IN6
+SW[7] => Mux4.IN6
+SW[7] => Mux5.IN6
+SW[7] => Mux6.IN6
+SW[7] => Mux7.IN6
+SW[8] => ~NO_FANOUT~
+SW[9] => register.OUTPUTSELECT
+SW[9] => register.OUTPUTSELECT
+SW[9] => register.OUTPUTSELECT
+SW[9] => register.OUTPUTSELECT
+SW[9] => register.OUTPUTSELECT
+SW[9] => register.OUTPUTSELECT
+SW[9] => register.OUTPUTSELECT
+SW[9] => register.OUTPUTSELECT
+KEY[0] => register[0].CLK
+KEY[0] => register[1].CLK
+KEY[0] => register[2].CLK
+KEY[0] => register[3].CLK
+KEY[0] => register[4].CLK
+KEY[0] => register[5].CLK
+KEY[0] => register[6].CLK
+KEY[0] => register[7].CLK
+LEDR[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= hexDecoder:hex0.HEX
+HEX0[1] <= hexDecoder:hex0.HEX
+HEX0[2] <= hexDecoder:hex0.HEX
+HEX0[3] <= hexDecoder:hex0.HEX
+HEX0[4] <= hexDecoder:hex0.HEX
+HEX0[5] <= hexDecoder:hex0.HEX
+HEX0[6] <= hexDecoder:hex0.HEX
+HEX4[0] <= hexDecoder:hex4.HEX
+HEX4[1] <= hexDecoder:hex4.HEX
+HEX4[2] <= hexDecoder:hex4.HEX
+HEX4[3] <= hexDecoder:hex4.HEX
+HEX4[4] <= hexDecoder:hex4.HEX
+HEX4[5] <= hexDecoder:hex4.HEX
+HEX4[6] <= hexDecoder:hex4.HEX
+HEX5[0] <= hexDecoder:hex5.HEX
+HEX5[1] <= hexDecoder:hex5.HEX
+HEX5[2] <= hexDecoder:hex5.HEX
+HEX5[3] <= hexDecoder:hex5.HEX
+HEX5[4] <= hexDecoder:hex5.HEX
+HEX5[5] <= hexDecoder:hex5.HEX
+HEX5[6] <= hexDecoder:hex5.HEX
+
+
+|edgeTriggeredDFlipFlop|fourBitAdder:FA1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+LEDR[0] <= fullAdder:FA1.s
+LEDR[1] <= fullAdder:FA2.s
+LEDR[2] <= fullAdder:FA3.s
+LEDR[3] <= fullAdder:FA4.s
+LEDR[4] <= fullAdder:FA4.cout
+
+
+|edgeTriggeredDFlipFlop|fourBitAdder:FA1|fullAdder:FA1
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|edgeTriggeredDFlipFlop|fourBitAdder:FA1|fullAdder:FA2
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|edgeTriggeredDFlipFlop|fourBitAdder:FA1|fullAdder:FA3
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|edgeTriggeredDFlipFlop|fourBitAdder:FA1|fullAdder:FA4
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|edgeTriggeredDFlipFlop|fourBitAdder:FA2
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+LEDR[0] <= fullAdder:FA1.s
+LEDR[1] <= fullAdder:FA2.s
+LEDR[2] <= fullAdder:FA3.s
+LEDR[3] <= fullAdder:FA4.s
+LEDR[4] <= fullAdder:FA4.cout
+
+
+|edgeTriggeredDFlipFlop|fourBitAdder:FA2|fullAdder:FA1
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|edgeTriggeredDFlipFlop|fourBitAdder:FA2|fullAdder:FA2
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|edgeTriggeredDFlipFlop|fourBitAdder:FA2|fullAdder:FA3
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|edgeTriggeredDFlipFlop|fourBitAdder:FA2|fullAdder:FA4
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|edgeTriggeredDFlipFlop|hexDecoder:hex0
+SW[0] => Decoder0.IN3
+SW[1] => Decoder0.IN2
+SW[2] => Decoder0.IN1
+SW[3] => Decoder0.IN0
+HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|edgeTriggeredDFlipFlop|hexDecoder:hex4
+SW[0] => Decoder0.IN3
+SW[1] => Decoder0.IN2
+SW[2] => Decoder0.IN1
+SW[3] => Decoder0.IN0
+HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|edgeTriggeredDFlipFlop|hexDecoder:hex5
+SW[0] => Decoder0.IN3
+SW[1] => Decoder0.IN2
+SW[2] => Decoder0.IN1
+SW[3] => Decoder0.IN0
+HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,128 @@
+module flashes(SW, HEX0, Clk_50);	
+	input [3:0] SW;		
+	input Clk_50;		
+	output HEX0;
+	wire Enable;
+	wire [28:0] Count;
+	wire [3:0] Value;
+
+	FourToOneMux m0(
+		.SW(SW[1:0]), 
+		.Count(Count[28:0])
+	);
+	RateDivider r0(
+		.Clk(Clk_50), 
+		.reset_n(SW[2]), 
+		.Enable(Enable), 
+		.d(Count[28:0])
+	);
+	Counter d0(
+		.Clk(Clk_50), 
+		.Enable(Enable), 
+		.reset_n(SW[2]), 
+		.q(Value)
+	);
+	HexDecoder hex0(
+		.SW(Value), 
+		.HEX(HEX0)
+	);
+endmodule
+
+module Counter(Clk, Enable, reset_n, q);
+	input Clk;
+	input Enable;
+	input reset_n;
+	output [3:0] q;
+
+	reg [3:0] count;
+
+	always @(posedge Clk)
+	begin
+		if (reset_n == 1'b0)
+			count <= 0;
+		else if (Enable == 1'b1)
+			begin
+				if (count == 4'b1111)
+					count <= 0;
+				else
+					count <= count + 1'b1;
+			end
+	end
+	assign q[3:0] = count[3:0];
+endmodule
+
+module RateDivider(Clk, reset_n, Enable, d);
+	input [28:0] d;
+	input reset_n;
+	input Clk;
+	output Enable;
+
+	always @(posedge Clk, negedge reset_n)
+	begin
+		if (reset_n == 1'b0)
+			count <= d;
+		else if (count == 0)
+			count <= d;
+		else
+			count <= count - 1;
+	end
+	assign Enable = (count == 0) ? 1 : 0;
+endmodule
+
+module FourToOneMux(SW, Count);
+	input [1:0] SW;
+	output [28:0] Count;
+
+	reg [28:0] Out;
+	always @(*)
+	begin
+		case (SW[1:0])
+			2'b00:  Out = 0;
+			2'b01:  Out = 5 * 10 ** 7 - 1;
+			2'b10:  Out = 2 * 5 * 10 ** 7 - 1;
+			2'b11:  Out = 4 * 5 * 10 ** 7 - 1;
+			default: Out = 1'b0;
+		endcase
+	end
+	assign Count[28:0] = Out[28:0];
+endmodule
+
+module hexDecoder (SW, HEX);
+	input [3:0] SW;
+	output [6:0] HEX;
+
+  	assign HEX[0] = ~SW[3] & ~SW[2] & ~SW[1] & SW[0] |
+			~SW[3] & SW[2] & ~SW[1] & ~SW[0] |
+			SW[3] & ~SW[2] & SW[1] & SW[0] |
+			SW[3] & SW[2] & ~SW[1] & SW[0];
+
+	assign HEX[1] = SW[2] & SW[1] & ~SW[0] |
+			SW[3] & SW[1] & SW[0] |
+			SW[3] & SW[2] & ~SW[0] |
+			~SW[3] & SW[2] & ~SW[1] & SW[0];			
+
+	assign HEX[2] = SW[3] & SW[2] & ~SW[0] |
+			SW[3] & SW[2] & SW[1] |
+			~SW[3] & ~SW[2] & SW[1] & ~SW[0];
+					
+	assign HEX[3] = SW[2] & SW[1] & SW[0] |
+			~SW[3] & ~SW[2] & ~SW[1] & SW[0] |
+			~SW[3] & SW[2] & ~SW[1] & ~SW[0] |
+			SW[3] & ~SW[2] & SW[1] & ~SW[0];						
+
+	assign HEX[4] = ~SW[3] & SW[0] |
+			~SW[2] & ~SW[1] & SW[0] |
+			~SW[3] & SW[2] & ~SW[1] |
+			~SW[3] & SW[2] & ~SW[1] & SW[0] |
+			~SW[3] & SW[2] & SW[1] & SW[0] |
+			SW[3] & ~SW[2] & ~SW[1] & SW[0];
+
+	assign HEX[5] = ~SW[3] & ~SW[2] & SW[0] |
+			~SW[3] & ~SW[2] & SW[1] |
+			~SW[3] & SW[1] & SW[0] |
+			SW[3] & SW[2] & ~SW[1] & SW[0];
+
+	assign HEX[6] = ~SW[3] & ~SW[2] & ~SW[1] |
+			~SW[3] & SW[2] & SW[1] & SW[0] |
+			SW[3] & SW[2] & ~SW[1] & ~SW[0];
+endmodule

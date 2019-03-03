@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/04-Lab 4/05-Part 3
+vFlipFlop
+Z1 !s110 1549330139
+!i10b 1
+!s100 1hTDm;c5_JEjn8aPEL<;51
+IlUaTSb3YR7=l=a=^V4@k63
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1549325698
+Z4 8shiftRegister.v
+Z5 FshiftRegister.v
+L0 137
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1549330139.000000
+Z8 !s107 shiftRegister.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|shiftRegister.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+n@flip@flop
+vShifterBit
+R1
+!i10b 1
+!s100 =9YIKAaE;3d<zPa6=2[Tz2
+IhgkM`cOG?<<U4U42UCOKk3
+R2
+R0
+R3
+R4
+R5
+L0 109
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@shifter@bit
+vshiftRegister
+R1
+!i10b 1
+!s100 TO7>`oHYB@PQ?o8cK7gfX3
+IUjUDNz9Wa>OKI4YgMo6cW1
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nshift@register
+vTwoToOneMux
+R1
+!i10b 1
+!s100 cDn006n>KL?YAll@b11lG0
+IzN1W_Rd7B;G5jO9CT^kMe2
+R2
+R0
+R3
+R4
+R5
+L0 151
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@two@to@one@mux
