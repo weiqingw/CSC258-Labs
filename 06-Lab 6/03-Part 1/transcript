@@ -1,0 +1,254 @@
+do sequence_detector.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:04:32 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:04:33 on Mar 02,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim sequence_detector 
+# Start time: 17:04:33 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:29 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:06:29 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:06:29 on Mar 02,2019, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:06:29 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:07:11 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:07:11 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:07:11 on Mar 02,2019, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:07:11 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:10:06 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:10:06 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:10:06 on Mar 02,2019, Elapsed time: 0:02:55
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:10:06 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:11:03 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:11:03 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:11:03 on Mar 02,2019, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:11:03 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:12:11 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:12:11 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:12:12 on Mar 02,2019, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:12:12 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:13:26 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:13:26 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:13:26 on Mar 02,2019, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:13:26 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:14:35 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:14:35 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:14:36 on Mar 02,2019, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:14:36 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:55 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:15:55 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:15:56 on Mar 02,2019, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:15:56 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:17:15 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:17:15 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:17:15 on Mar 02,2019, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:17:15 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:17:32 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:17:32 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:17:32 on Mar 02,2019, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:17:32 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:18:49 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:18:49 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:18:49 on Mar 02,2019, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:18:49 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:19:57 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:19:57 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:19:58 on Mar 02,2019, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:19:58 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:22:49 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:22:49 on Mar 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:22:49 on Mar 02,2019, Elapsed time: 0:02:51
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:22:49 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:24:09 on Mar 02,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:24:10 on Mar 02,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:24:10 on Mar 02,2019, Elapsed time: 0:01:21
+# Errors: 0, Warnings: 1
+# vsim sequence_detector 
+# Start time: 17:24:10 on Mar 02,2019
+# Loading work.sequence_detector
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# End time: 17:30:02 on Mar 02,2019, Elapsed time: 0:05:52
+# Errors: 0, Warnings: 1

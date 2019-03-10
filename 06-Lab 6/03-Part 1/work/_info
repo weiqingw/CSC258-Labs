@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/06-Lab 6/03-Part 1
+vsequence_detector
+!s110 1551565450
+!i10b 1
+!s100 Jgb^f;:h`_RaiL=>BEl^b3
+IbH0Y=i;jl^d5mc<3PHA;;3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1551565171
+8sequence_detector.v
+Fsequence_detector.v
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1551565449.000000
+!s107 sequence_detector.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|sequence_detector.v|
+!i113 1
+o-timescale 1ns/1ns
+tCvgOpt 0
