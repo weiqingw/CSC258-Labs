@@ -1,0 +1,8 @@
+
+State Machine - |part2|control:c0|current_state
+Name current_state.LOAD_Y_C_WAIT current_state.LOAD_Y_C current_state.LOAD_X_WAIT current_state.LOAD_X current_state.PLOT 
+current_state.LOAD_X 0 0 0 0 0 
+current_state.LOAD_X_WAIT 0 0 1 1 0 
+current_state.LOAD_Y_C 0 1 0 1 0 
+current_state.LOAD_Y_C_WAIT 1 0 0 1 0 
+current_state.PLOT 0 0 0 1 1 

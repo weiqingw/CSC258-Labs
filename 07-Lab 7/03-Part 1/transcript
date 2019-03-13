@@ -1,0 +1,102 @@
+do ram32x4.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:28 on Mar 10,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns ram32x4.v 
+# -- Compiling module ram32x4
+# 
+# Top level modules:
+# 	ram32x4
+# End time: 15:22:28 on Mar 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L altera_mf_ver ram32x4 
+# Start time: 15:22:28 on Mar 10,2019
+# Loading work.ram32x4
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error (suppressible): (vsim-4008) Object 'KEY[0]' not found.
+# Error in macro ./ram32x4.do line 6
+# ** Error (suppressible): (vsim-4008) Object 'KEY[0]' not found.
+# 
+#     while executing
+# "force {KEY[0]} 0 0, 1 10 -r 20"
+do ram32x4.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:24:00 on Mar 10,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns ram32x4.v 
+# -- Compiling module ram32x4
+# 
+# Top level modules:
+# 	ram32x4
+# End time: 15:24:00 on Mar 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:24:00 on Mar 10,2019, Elapsed time: 0:01:32
+# Errors: 1, Warnings: 0
+# vsim -L altera_mf_ver ram32x4 
+# Start time: 15:24:00 on Mar 10,2019
+# Loading work.ram32x4
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error (suppressible): (vsim-4008) Object 'KEY[0]' not found.
+# Error in macro ./ram32x4.do line 6
+# ** Error (suppressible): (vsim-4008) Object 'KEY[0]' not found.
+# 
+#     while executing
+# "force {KEY[0]} 0 0, 1 10 -r 20"
+do ram32x4.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:24:13 on Mar 10,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns ram32x4.v 
+# -- Compiling module ram32x4
+# 
+# Top level modules:
+# 	ram32x4
+# End time: 15:24:13 on Mar 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:24:14 on Mar 10,2019, Elapsed time: 0:00:14
+# Errors: 1, Warnings: 0
+# vsim -L altera_mf_ver ram32x4 
+# Start time: 15:24:14 on Mar 10,2019
+# Loading work.ram32x4
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error (suppressible): (vsim-4008) Object 'KEY[0]' not found.
+# Error in macro ./ram32x4.do line 6
+# ** Error (suppressible): (vsim-4008) Object 'KEY[0]' not found.
+# 
+#     while executing
+# "force {KEY[0]} 0 0, 1 10 -r 20"
+do ram32x4.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:27:00 on Mar 10,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns ram.v 
+# -- Compiling module ram
+# -- Compiling module ram32x4
+# -- Compiling module hex_decoder
+# 
+# Top level modules:
+# 	ram
+# End time: 15:27:00 on Mar 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:27:00 on Mar 10,2019, Elapsed time: 0:02:46
+# Errors: 1, Warnings: 0
+# vsim -L altera_mf_ver ram 
+# Start time: 15:27:00 on Mar 10,2019
+# Loading work.ram
+# Loading work.ram32x4
+# Loading altera_mf_ver.altsyncram
+# Loading work.hex_decoder
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# End time: 15:27:29 on Mar 10,2019, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 1

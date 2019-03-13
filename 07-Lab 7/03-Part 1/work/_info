@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/07-Lab 7/03-Part 1
+vhex_decoder
+Z1 !s110 1552246020
+!i10b 1
+!s100 cMH=V1@KzYjJ`Z^lOdVM63
+I29aNH6dDnS1C@C716ZfO]3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1552246003
+Z4 8ram.v
+Z5 Fram.v
+L0 227
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1552246020.000000
+Z8 !s107 ram.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|ram.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+vram
+R1
+!i10b 1
+!s100 1c_[<O[Xz=mYJmRZ=Nf;P1
+IkMLYcIV25?618cACY6M^b1
+R2
+R0
+R3
+R4
+R5
+L0 41
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vram32x4
+R1
+!i10b 1
+!s100 <mdKEEGZ1e14oWhUcDCMF2
+I2Kh?NEL1>9PokVWjKXIKS0
+R2
+R0
+R3
+R4
+R5
+L0 91
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

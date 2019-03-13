@@ -1,0 +1,85 @@
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:38 on Mar 10,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# ** Error: (vlog-13069) part2.v(1): near "(": syntax error, unexpected '(', expecting class.
+# End time: 20:09:38 on Mar 10,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /opt/Intel/18.1/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 2
+# /opt/Intel/18.1/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:10:14 on Mar 10,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module combination
+# -- Compiling module control
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	part2
+# 	combination
+# End time: 20:10:14 on Mar 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 20:10:14 on Mar 10,2019
+# Loading work.datapath
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:14:14 on Mar 10,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module combination
+# -- Compiling module control
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	part2
+# 	combination
+# End time: 20:14:14 on Mar 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:14:14 on Mar 10,2019, Elapsed time: 0:04:00
+# Errors: 0, Warnings: 1
+# vsim control 
+# Start time: 20:14:14 on Mar 10,2019
+# Loading work.control
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do combination.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:17:44 on Mar 10,2019
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module combination
+# -- Compiling module control
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	part2
+# 	combination
+# End time: 20:17:44 on Mar 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:17:44 on Mar 10,2019, Elapsed time: 0:03:30
+# Errors: 0, Warnings: 1
+# vsim combination 
+# Start time: 20:17:44 on Mar 10,2019
+# Loading work.combination
+# Loading work.control
+# Loading work.datapath
+# ** Warning: (vsim-3015) part2.v(121): [PCDPC] - Port size (7) does not match connection size (8) for port 'y_out'. The port definition is at: part2.v(199).
+#    Time: 0 ns  Iteration: 0  Instance: /combination/d0 File: part2.v
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Error: invalid command name "force{go}"
+# Error in macro ./combination.do line 22
+# invalid command name "force{go}"
+#     while executing
+# "force{go} 0"
+# End time: 20:26:02 on Mar 10,2019, Elapsed time: 0:08:18
+# Errors: 3, Warnings: 2

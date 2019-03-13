@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/media/weiqing/Windows/Users/baile/OneDrive - University of Toronto/Year 2/08-CSC258H1 S/03-Labs/07-Lab 7/04-Part 2
+vcombination
+Z1 !s110 1552263464
+!i10b 1
+!s100 b`U`TMNEZ3WD@V9NF[;X@3
+I6A;RRe^G;0P;[I_6Kc7dI0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1552263442
+Z4 8part2.v
+Z5 Fpart2.v
+L0 99
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1552263464.000000
+Z8 !s107 part2.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|part2.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+vcontrol
+R1
+!i10b 1
+!s100 `i3MmJe_Bm]e]0g`ECX5>2
+I@SNPOY9ah1VYL4<bY`Dl70
+R2
+R0
+R3
+R4
+R5
+L0 137
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vdatapath
+R1
+!i10b 1
+!s100 EKb7A;:8zL2C4zf^OfYG=2
+I5:EcPWL8P78`7]13QL3NP2
+R2
+R0
+R3
+R4
+R5
+L0 194
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vpart2
+R1
+!i10b 1
+!s100 P3TUUegazL8UjiD<]bAWI2
+IMEGSTAJFJ4QRjQ1[9?AX;3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtest_module
+!s110 1552262914
+!i10b 1
+!s100 6eml<UFfF=Faf0Nk3G;=32
+IniHM7^=hajO67A[GATaJG3
+R2
+R0
+w1552262081
+R4
+R5
+L0 210
+R6
+r1
+!s85 0
+31
+!s108 1552262913.000000
+R8
+R9
+!i113 1
+R10
+R11
