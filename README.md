@@ -23,10 +23,10 @@ To test my Verilog files using Quartus® and DoC-SE1 board, please follow the fo
 - Click File -> Open Project, to open the ".qpf" project file.
 - Click Tools -> Programmer. A window will pop-out.
 - Click Hardware Setup. You should see the connected board in the window popped out.'
-- Double Click the DoC-SE1 board, and press "OK".
+- Double Click the DE1-SoC board, and press "OK".
 - Delete everything in the file list.
 - Press "Auto Detect", then select "5CSEMA" before pressing "OK".
-- Double Click the "5CSEMA5F31C6" device, and import the output file from the output folder.
+- Double Click the "5CSEMA5" device, and import the output file from the output folder.
 - Press "Start" to download the compiled code to the board.
 
 It's now time to play with the board! Part 2 of the 7th lab requires another Mornitor and a VGA cable for testing. To see what each switch/key/output does, you may refer to the Lab handout which contains the requirements for my Verilog design.
