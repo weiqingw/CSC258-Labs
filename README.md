@@ -2,7 +2,7 @@ The purpose of the GitHub repository is to showcase my course work for CSC258H1 
 
 # Before you start
 You need to make sure you have the either of the below two sets:
-- ModelSim*-Intel® FPGA Edition Software (https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/model-sim.html)
+- ModelSim*-Intel® FPGA Edition Software (https://www.intel.ca/content/www/ca/en/software/programmable/quartus-prime/model-sim.html)
 - Intel® Quartus® Prime Software (https://www.intel.ca/content/www/ca/en/software/programmable/quartus-prime/download.html) _AND_ a DoC-SE1 Board, which can be purchased at https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836.
 
 Both softwares can be downloaded at http://fpgasoftware.intel.com/18.1/?edition=lite. In the near future, I will provide a detailed instruction on how to install the two softwares. Unfortunately, Apple users do need to install a Windows or Ubuntu virtual machine before working with above two softwares. 
