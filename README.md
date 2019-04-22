@@ -3,7 +3,7 @@ The purpose of the GitHub repository is to showcase my course work for CSC258H1 
 # Before you start
 You need to make sure you have the either of the below two sets:
 - ModelSim*-Intel® FPGA Edition Software (https://www.intel.ca/content/www/ca/en/software/programmable/quartus-prime/model-sim.html)
-- Intel® Quartus® Prime Software (https://www.intel.ca/content/www/ca/en/software/programmable/quartus-prime/download.html) _AND_ a DoC-SE1 Board, which can be purchased at https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836.
+- Intel® Quartus® Prime Software (https://www.intel.ca/content/www/ca/en/software/programmable/quartus-prime/download.html) _AND_ a DE1-SoC Board, which can be purchased at https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836.
 
 Both softwares can be downloaded at http://fpgasoftware.intel.com/18.1/?edition=lite. In the near future, I will provide a detailed instruction on how to install the two softwares. Unfortunately, Apple users do need to install a Windows or Ubuntu virtual machine before working with above two softwares. 
 
@@ -17,9 +17,9 @@ To test my Verilog files using ModelSim®, please follow the following steps:
 
 One thing to keep in mind is that in order to thoroughly test my Verilog design, some of my ".do" files has long test cases. On my machine, it could take up to 1 hour for ModelSim to finish the simulation. To see what each switch/key/output does, you may refer to the Lab handout which contains the requirements for my Verilog design.
 
-# Test the Verilog Design with Quartus® and DoC-SE1 board.
-To test my Verilog files using Quartus® and DoC-SE1 board, please follow the following steps:
-- Connect your DoC-SE1 board to your machine and open Quartus®.
+# Test the Verilog Design with Quartus® and DE1-SoC board.
+To test my Verilog files using Quartus® and DE1-SoC board, please follow the following steps:
+- Connect your DE1-SoC board to your machine and open Quartus®.
 - Click File -> Open Project, to open the ".qpf" project file.
 - Click Tools -> Programmer. A window will pop-out.
 - Click Hardware Setup. You should see the connected board in the window popped out.'
